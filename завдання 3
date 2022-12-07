@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+setlocale(0,".1251"); 
+double x, y, z, A, B, h;
+
+cout<<"Введіть початкове значення X= ";
+cin>> A;
+ cout<<"Введіть кінцеве значення X= ";
+cin >> B;
+cout<<"Введіть крок для Х= ";
+cin >> h;
+cout<<"\n X \t Y(X) t Z(x) \n";
+
+for(x=A; x <=B+.1*h; x+=h)
+{y = atan(x+3.1);
+z= exp(x);
+cout<<"x = "<< x <<" \t "<< y <<" \t "<< z << endl;
+}
+return 0;
+}
