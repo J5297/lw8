@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h> 
+using namespace std;
+
+int main()
+
+{setlocale(0,".1251");
+
+double u, s=0;
+int i, n;
+cout<<"Введіть натуральне значення n= ";
+cin>> n;
+cout<<"\nPезультати:\n";
+
+for (i=1; i<=n; i++)
+{ u = pow(-1,i+1.0) / ((2*i)-1); 
+cout<<"Доданок " << i << " = " << u << endl;
+s+=u;
+}
+cout<<"Cyма =" << s << endl; 
+
+return 0;
+}
